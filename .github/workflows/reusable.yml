@@ -16,7 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: testing reusable
-        with:
-          username: ${{ inputs.username }}
-          token: ${{ secrets.token }}
-        run: echo hello ${username}
+        run: echo hello ${{ inputs.username }}
